@@ -4,6 +4,9 @@ using System.Security.Cryptography;
 
 namespace RockPaperScissorsGame
 {
+    /// <summary>
+    /// For generating key and HMAC
+    /// </summary>
     class Security
     {
         public string GenerateKey()

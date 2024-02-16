@@ -5,6 +5,9 @@ namespace RockPaperScissorsGame
 {
     class Judge
     {
+        /// <summary>
+        /// For deciding the result of the match
+        /// </summary>
         int MovesCount;
 
         public Judge(int movesCount)

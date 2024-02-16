@@ -5,8 +5,15 @@ namespace RockPaperScissorsGame
 {
     public  class CheckArguments
     {
+        /// <summary>
+        /// For checking the arguments
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
         public static bool CheckArgs(string[] args)
         {
+            OverallScore.ResetScore();
+
             if (args.Length < 3)
             {
                 Console.WriteLine("Invalid number of options: please pass at least 3 options or more!\n");

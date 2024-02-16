@@ -7,16 +7,17 @@ namespace RockPaperScissorsGame
     {
         static void Main(string[] args)
         {
+            // For checking the arguments
              if (!CheckArguments.CheckArgs(args))
                 return;
 
             Console.WriteLine("Hello there.We will enjoy together! Lets start!\n");
 
             var sec = new Security();
-            var a = new Table(args);
+            var a = new Table(args);                       
             var judge = new Judge(args.Length);
 
-            bool gameFinished = false;
+            bool gameFinished = false;  
 
             while (!gameFinished)
             {

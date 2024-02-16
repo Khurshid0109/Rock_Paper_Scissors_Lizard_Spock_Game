@@ -5,6 +5,9 @@ using RockPaperScissorsGame.Enums;
 
 namespace RockPaperScissorsGame
 {
+    /// <summary>
+    /// For generating the table
+    /// </summary>
     class Table
     {
         string[] Options;
