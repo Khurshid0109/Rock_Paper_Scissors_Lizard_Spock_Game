@@ -17,18 +17,7 @@ namespace RockPaperScissorsGame
             int p = (int)Math.Floor(MovesCount / 2.0);  
 
             int result = Math.Sign((computer - player + p + MovesCount) % MovesCount - p);
-
-            //if (computer == player)
-            //{
-            //    return Result.Draw;
-            //}
-
-            //if ((player > computer && player - computer <= MovesCount / 2) || (player < computer && computer - player > MovesCount / 2.0))
-            //{
-            //    return Result.Won;
-            //}
-
-            //return Result.Lost;
+            OverallScore.UpdateScore(result);
 
             if (result == -1)
                 return Result.Won;
@@ -41,7 +30,6 @@ namespace RockPaperScissorsGame
             switch (Decide(computerMove, playerMove - 1))
             {
                 case Result.Won:
-
                     Console.WriteLine("You won!");
                     break;
 

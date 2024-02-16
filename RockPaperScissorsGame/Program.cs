@@ -28,6 +28,7 @@ namespace RockPaperScissorsGame
              if (!CheckArgs(args))
                 return;
             Console.WriteLine("Hello there.We will enjoy together! Lets start!");
+
             var sec = new Security();
             var a = new Table(args);
             var judge = new Judge(args.Length);
@@ -48,6 +49,7 @@ namespace RockPaperScissorsGame
                     Console.WriteLine(i + 1 + " - " + args[i]);
                 }
                 Console.WriteLine("0 - Exit");
+                Console.WriteLine("! - Score");
                 Console.WriteLine("? - Help");
 
                 Console.Write("Enter your move: ");
@@ -59,11 +61,16 @@ namespace RockPaperScissorsGame
                     Console.WriteLine("");
                     continue;
                 }
-
-                if (ans == "0")
+                else if (ans == "0")
                 {
                     gameFinished = true;
+                    OverallScore.ResetScore();
                     Console.WriteLine("Goodby.Have a nice day!");
+                    continue;
+                }
+                else if(ans == "!")
+                {
+                    OverallScore.DisplayScore();
                     continue;
                 }
 
