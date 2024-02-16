@@ -20,7 +20,7 @@ namespace RockPaperScissorsGame
 
         public static void DisplayScore()
         {
-           Console.WriteLine("You: " + Score["Player"] + "  Computer: " + Score["Computer"]);
+           Console.WriteLine("You: " + Score["Player"] + "  Computer: " + Score["Computer"]+"\n");
         }
 
         public static void ResetScore()

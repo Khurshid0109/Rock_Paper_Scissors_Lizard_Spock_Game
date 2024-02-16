@@ -8,9 +8,14 @@ namespace RockPaperScissorsGame
     {
         static bool CheckArgs(string[] args)
         {
-            if (args.Length < 3 || args.Length % 2 == 0)
+            if (args.Length < 3)
             {
-                Console.WriteLine("Invalid number of options: please pass odd number of moves (3 or more).");
+                Console.WriteLine("Invalid number of options: please pass at least 3 options or more !");
+                return false;
+            }
+            if ( args.Length % 2 == 0)
+            {
+                Console.WriteLine("Invalid number of options: please pass odd number of moves!");
                 return false;
             }
 
@@ -27,7 +32,7 @@ namespace RockPaperScissorsGame
         {
              if (!CheckArgs(args))
                 return;
-            Console.WriteLine("Hello there.We will enjoy together! Lets start!");
+            Console.WriteLine("Hello there.We will enjoy together! Lets start!\n");
 
             var sec = new Security();
             var a = new Table(args);
