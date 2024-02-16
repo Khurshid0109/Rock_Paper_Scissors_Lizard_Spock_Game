@@ -1,37 +1,15 @@
 ﻿using System;
-using System.Linq;
 using System.Security.Cryptography;
 
 namespace RockPaperScissorsGame
 {
     class Program
     {
-        static bool CheckArgs(string[] args)
-        {
-            if (args.Length < 3)
-            {
-                Console.WriteLine("Invalid number of options: please pass at least 3 options or more !");
-                return false;
-            }
-            if ( args.Length % 2 == 0)
-            {
-                Console.WriteLine("Invalid number of options: please pass odd number of moves!");
-                return false;
-            }
-
-            if (args.Length != args.Distinct().Count())
-            {
-                Console.WriteLine("Please try to hold space between options!");
-                return false;
-            }
-
-            return true;
-        }
-
         static void Main(string[] args)
         {
-             if (!CheckArgs(args))
+             if (!CheckArguments.CheckArgs(args))
                 return;
+
             Console.WriteLine("Hello there.We will enjoy together! Lets start!\n");
 
             var sec = new Security();
@@ -69,6 +47,7 @@ namespace RockPaperScissorsGame
                 else if (ans == "0")
                 {
                     gameFinished = true;
+                    OverallScore.DisplayScore();
                     OverallScore.ResetScore();
                     Console.WriteLine("Goodby.Have a nice day!");
                     continue;
