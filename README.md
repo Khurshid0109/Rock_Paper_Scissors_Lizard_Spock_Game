@@ -14,6 +14,9 @@ This is a Rock, Paper, Scissors game built with C#. You can play this classic ha
 3. The winner of the round will be displayed.
 4. Keep playing and try to beat the computer!
 
+https://github.com/Khurshid0109/Rock_Paper_Scissors_Lizard_Spock_Game/assets/135223545/65a1d9f0-7a00-4dd1-99fa-af1ac5aef9af
+
+
 ## Installation
 
 To run the game locally, follow these steps:
