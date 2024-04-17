@@ -1,6 +1,7 @@
 # Rock, Paper, Scissors Game
 
-This is a Rock, Paper, Scissors game built with C#. You can play this classic hand game against the computer. 
+This is a Rock, Paper, Scissors, Lizard and Spock game built with C#. You can play this classic hand game against the computer. 
+![Table](https://github.com/Khurshid0109/Rock_Paper_Scissors_Lizard_Spock_Game/assets/135223545/5fe675b1-0c19-4042-80dc-a6f0253f565c)
 
 ## Features
 
