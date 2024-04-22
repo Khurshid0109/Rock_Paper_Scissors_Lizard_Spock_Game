@@ -10,7 +10,7 @@ This is a Rock, Paper, Scissors, Lizard and Spock game built with C#. You can pl
 
 ## How to Play
 
-1. Choose your move: Rock, Paper, or Scissors.
+1. Choose your move: Rock, Paper, Scissors, Lizard or Spock.
 2. The computer will randomly select its move.
 3. The winner of the round will be displayed.
 4. Keep playing and try to beat the computer!
